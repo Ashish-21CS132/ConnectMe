@@ -46,7 +46,7 @@ function Login() {
       }}
     >
       <div className="login-page  p-4 min-w-[400px] rounded-sm shadow-2xl">
-        <h1 className="text-2xl font-bold text-center mb-4">Login</h1>
+        <h1 className="text-2xl font-bold text-center mb-4">Log in</h1>
         <form onSubmit={handlechange} className="flex flex-col">
           <label className="font-bold" htmlFor="email">
             Email
