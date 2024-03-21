@@ -82,7 +82,7 @@ const refreshTokenController = async (req, res) => {
   try {
     const decode = jwt.verify(
       refreshToken,
-      process.env.Refresh_Token_Private_key,
+      process.env.REFRESH_TOKEN_PRIVATE_KEY,
     )
     req._id = decode._id
 
@@ -96,7 +96,7 @@ const refreshTokenController = async (req, res) => {
 
 const generateAccessTokens = (data) => {
   try {
-    const token = jwt.sign(data, process.env.Access_Token_Private_key)
+    const token = jwt.sign(data, process.env.ACCESS_TOKEN_PRIVATE_KEY)
     console.log(token)
     return token
   } catch (err) {
@@ -106,7 +106,7 @@ const generateAccessTokens = (data) => {
 
 const generateRefreshToken = (data) => {
   try {
-    const token = jwt.sign(data, process.env.Refresh_Token_Private_key)
+    const token = jwt.sign(data, process.env.REFRESH_TOKEN_PRIVATE_KEY)
     console.log(token)
     return token
   } catch (err) {

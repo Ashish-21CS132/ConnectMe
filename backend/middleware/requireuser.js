@@ -20,7 +20,7 @@ module.exports = async (req, res, next) => {
     try {
         const decoded = jwt.verify(
             accessToken,
-            process.env.Access_Token_Private_Key
+            process.env.ACCESS_TOKEN_PRIVATE_KEY
         );
         
         
