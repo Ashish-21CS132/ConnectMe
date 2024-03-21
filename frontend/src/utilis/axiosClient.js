@@ -4,7 +4,7 @@ import {  KEY_ACCESS_TOKEN } from './localStorage'
 // import { setloding } from '../redux/slices/appconfigslice'
 
 export const axiosClient = axios.create({
-  baseURL: 'https://connectme-xqnc.onrender.com/',
+  baseURL: 'https://connectme-xqnc.onrender.com',
   withCredentials: true,
 })
 
